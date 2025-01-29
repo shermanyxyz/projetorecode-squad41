@@ -13,6 +13,157 @@
 .banners {
     height: auto;
     max-height: 90vh;
-    
+
 }
 
+.btn {
+    display: grid;
+    margin: auto;
+    align-items: center;
+    place-items: center;
+}
+
+
+
+.carousel-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+    .carousel-container {
+        border-radius: 0;/
+    }
+
+    .carousel-item img {
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+#vendidos {
+    font-size: clamp(1.2rem, 5vw, 2rem);
+    text-align: center;
+    font-weight: bold;
+    margin-top: 200px;
+}
+
+.footer {
+    background: linear-gradient(to right, #3C763D, #C1440E) !important;
+    padding: 40px 0;
+    margin-top: 50px;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+
+.footer-section h4 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 5px;
+}
+
+.footer-section p {
+    color: #ffffff;
+}
+
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #3498db;
+}
+
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #ecf0f1;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #3498db;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
